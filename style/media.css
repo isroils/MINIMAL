@@ -1,0 +1,168 @@
+@media(max-width:940px) {
+    .projects__content {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+        display: flex;
+
+
+    }
+
+    .team__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .nav__content {
+        padding: 8px 0;
+    }
+
+
+}
+
+@media(max-width:750px) {
+    .about__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about__liner::before {
+        display: none;
+
+    }
+
+    .about__item:nth-of-type(1) {
+        content: '';
+        border-bottom: 3px solid rgba(0, 0, 0, 0.04);
+        width: 215px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .about__content {
+        gap: 20px;
+    }
+
+    .touch__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .touch__title {
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
+
+    .touch__item:nth-of-type(1) {
+        margin-top: -25px;
+    }
+    .footer__text{
+        padding-bottom: 45px;
+    }
+}
+@media(max-width:670px){
+    .input,
+    .textarea{
+        width: 570px;
+        
+    }
+}
+
+@media(max-width:570px) {
+
+    .nav__item {
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        backdrop-filter: blur(15px);
+        bottom: 0;
+        padding: 30px;
+        box-shadow: -5px -2px 15px rgb(0 0 0 / 47%);
+        transform: translateY(-105%);
+        transition: 0.3s linear;
+        z-index: 1;
+    }
+
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:focus+.nav__item {
+        transform: translateY(0);
+
+    }
+
+    .header-2 {
+        padding: 30px 0;
+    }
+
+    .title {
+        padding-top: 50px;
+    }
+    .input,
+    .textarea{
+        width: 470px;
+        
+    }
+}
+
+@media(max-width:490px) {
+    .brands__content {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__content {
+        padding: 5px 0;
+    }
+    .input,
+    .textarea{
+        width: 370px;
+        
+    }
+
+
+}
+
+
+@media(max-width:320px) {
+    .nav__item {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(100%);
+    }
+
+    .header-2 {
+        padding: 15px 0;
+    }
+
+    .team__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .input,
+    .textarea{
+        width: 300px;
+        
+    }
+    .title{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro__title,
+    .intro__title2{
+        font-size: 32px;
+    }
+}
